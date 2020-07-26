@@ -44,22 +44,18 @@ def collect_stats_from_users(report, users_objects, &block)
   end
 end
 
-
 def work
-  file_lines = File.read('data_20.txt').split("\n")
+  file_lines = File.read('data.txt').split("\n")
 
   users = []
   sessions = []
 
-  parts_of_work = 100
-  progressbar = ProgressBar.create(total: parts_of_work, format: '%a, %J, %E, %B')
+  progressbar = ProgressBar.create(total: file_lines.count, format: '%a, %J, %E, %B')
 
-  (1..parts_of_work).each do |i|
-    file_lines.each do |line|
-      cols = line.split(',')
-      users = users + [parse_user(line)] if cols[0] == 'user'
-      sessions = sessions + [parse_session(line)] if cols[0] == 'session'
-    end
+  file_lines.each do |line|
+    cols = line.split(',')
+    users = users + [parse_user(line)] if cols[0] == 'user'
+    sessions = sessions + [parse_session(line)] if cols[0] == 'session'
     progressbar.increment
   end
 
