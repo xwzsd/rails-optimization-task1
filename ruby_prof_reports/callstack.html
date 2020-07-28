@@ -662,7 +662,7 @@
   <body>
     <div style="display: inline-block;">
       <div id="titlebar">
-        Call tree for application <strong>ruby-prof-call-stack.rb </strong><br/> Generated on 2020-07-25 22:11:30 +0300
+        Call tree for application <strong>ruby-prof-call-stack.rb </strong><br/> Generated on 2020-07-26 22:21:41 +0300
         with options {}<br/>
       </div>
       <div id="commands">
@@ -692,7 +692,7 @@
       
         
         <div class="thread">
-          <span>Thread: 70116234729420, Fiber: 70116247464740 (100.00% ~ 0.0013562050007749349)</span>
+          <span>Thread: 70336506992540, Fiber: 70336511977420 (100.00% ~ 0.0021841909911017865)</span>
           <ul name="thread">
             
             <li class="color9" style="display:block">
@@ -701,225 +701,105 @@
 <ul>
 <li class="color9" style="display:block">
 <a href="#" class="toggle minus" ></a>
-<span>99.01% (99.01%) <a href="file:///Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb#46">Object#work</a> [1 calls, 1 total]</span>
-<ul>
-<li class="color5" style="display:block">
-<a href="#" class="toggle minus" ></a>
-<span>52.67% (53.19%) <a href="file:///Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb#38">Object#collect_stats_from_users</a> [7 calls, 7 total]</span>
-<ul>
-<li class="color5" style="display:block">
-<a href="#" class="toggle minus" ></a>
-<span>52.14% (99.00%) Array#each [7 calls, 28 total]</span>
-<ul>
-<li class="color3" style="display:block">
-<a href="#" class="toggle minus" ></a>
-<span>37.13% (71.21%) Array#map [33 calls, 35 total]</span>
+<span>99.55% (99.55%) <a href="file:///Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb#18">Object#work</a> [1 calls, 1 total]</span>
 <ul>
 <li class="color2" style="display:block">
 <a href="#" class="toggle minus" ></a>
-<span>28.29% (76.21%) &lt;Class::Date&gt;#parse [15 calls, 15 total]</span>
+<span>23.21% (23.31%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar.rb#19">&lt;Class::ProgressBar&gt;#create</a> [1 calls, 1 total]</span>
 <ul>
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>2.55% (9.00%) Regexp#match [30 calls, 30 total]</span>
-</li>
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>1.45% (5.14%) String#gsub! [15 calls, 15 total]</span>
-</li>
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>1.13% (4.00%) MatchData#begin [15 calls, 15 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.77% (2.71%) String#[]= [15 calls, 15 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.61% (2.16%) Integer#div [15 calls, 15 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.30% (1.06%) MatchData#end [15 calls, 15 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>3.22% (8.66%) Date#iso8601 [15 calls, 15 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.71% (1.92%) String#to_i [30 calls, 30 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.29% (0.78%) String#upcase [15 calls, 45 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:block">
-<a href="#" class="toggle plus" ></a>
-<span>3.77% (7.23%) Hash#merge [21 calls, 21 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:block">
-<a href="#" class="toggle plus" ></a>
-<span>2.56% (67.91%) Kernel#initialize_dup [21 calls, 22 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>1.94% (76.00%) Hash#initialize_copy [21 calls, 21 total]</span>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>1.82% (3.49%) Array#sort [6 calls, 7 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.97% (53.26%) Date#&lt;=&gt; [23 calls, 23 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>1.36% (2.61%) Array#any? [3 calls, 3 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.26% (18.86%) String#upcase [11 calls, 45 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.67% (1.29%) Enumerable#all? [3 calls, 18 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.53% (78.87%) Array#each [3 calls, 28 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.10% (18.70%) String#upcase [4 calls, 45 total]</span>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.24% (0.46%) Array#join [3 calls, 4 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.23% (0.45%) Integer#to_s [6 calls, 6 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.19% (0.36%) Array#max [3 calls, 3 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.19% (0.36%) Array#sum [3 calls, 3 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.17% (0.33%) Array#reverse [3 calls, 3 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.09% (0.17%) Array#count [3 calls, 6 total]</span>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="color1" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>18.28% (18.46%) &lt;Class::IO&gt;#write [1 calls, 1 total]</span>
-</li>
+<li class="color2" style="display:block">
+<a href="#" class="toggle minus" ></a>
+<span>23.11% (99.58%) Class#new [1 calls, 22 total]</span>
+<ul>
+<li class="color2" style="display:block">
+<a href="#" class="toggle minus" ></a>
+<span>23.02% (99.64%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/base.rb#16">ProgressBar::Base#initialize</a> [1 calls, 1 total]</span>
+<ul>
 <li class="color1" style="display:block">
 <a href="#" class="toggle minus" ></a>
-<span>13.49% (13.63%) Array#each [3 calls, 28 total]</span>
+<span>18.54% (80.51%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/base.rb#39">ProgressBar::Base#start</a> [1 calls, 1 total]</span>
 <ul>
-<li class="color01" style="display:block">
-<a href="#" class="toggle plus" ></a>
-<span>3.84% (28.49%) <a href="file:///Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb#27">Object#parse_session</a> [15 calls, 15 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>1.80% (46.81%) String#split [15 calls, 37 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:block">
-<a href="#" class="toggle plus" ></a>
-<span>2.16% (16.00%) Enumerable#all? [15 calls, 18 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>1.58% (73.37%) Array#each [15 calls, 28 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>1.25% (9.25%) String#split [18 calls, 37 total]</span>
-</li>
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>1.23% (9.14%) Array#select [3 calls, 3 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.81% (5.98%) <a href="file:///Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb#17">Object#parse_user</a> [3 calls, 3 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.35% (43.42%) String#split [3 calls, 37 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.77% (5.72%) Class#new [3 calls, 3 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.35% (44.92%) <a href="file:///Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb#11">User#initialize</a> [3 calls, 3 total]</span>
-</li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="color1" style="display:block">
+<a href="#" class="toggle minus" ></a>
+<span>17.53% (94.58%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/base.rb#176">ProgressBar::Base#update_progress</a> [1 calls, 19 total]</span>
+<ul>
+<li class="color1" style="display:block">
+<a href="#" class="toggle minus" ></a>
+<span>17.45% (99.54%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/output.rb#42">ProgressBar::Output#with_refresh</a> [1 calls, 19 total]</span>
+<ul>
+<li class="color1" style="display:block">
+<a href="#" class="toggle minus" ></a>
+<span>16.93% (96.99%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/output.rb#47">ProgressBar::Output#refresh</a> [1 calls, 19 total]</span>
+<ul>
+<li class="color1" style="display:block">
+<a href="#" class="toggle minus" ></a>
+<span>16.64% (98.31%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/throttle.rb#15">ProgressBar::Throttle#choke</a> [1 calls, 19 total]</span>
+<ul>
+<li class="color1" style="display:block">
+<a href="#" class="toggle minus" ></a>
+<span>13.22% (79.41%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/output.rb#63">ProgressBar::Output#print_and_flush</a> [1 calls, 2 total]</span>
+<ul>
+<li class="color1" style="display:block">
+<a href="#" class="toggle minus" ></a>
+<span>12.40% (93.84%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/outputs/tty.rb#15">ProgressBar::Outputs::Tty#bar_update_string</a> [1 calls, 2 total]</span>
+<ul>
+<li class="color1" style="display:block">
+<a href="#" class="toggle minus" ></a>
+<span>12.32% (99.33%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/base.rb#120">ProgressBar::Base#to_s</a> [1 calls, 2 total]</span>
+<ul>
+<li class="color1" style="display:block">
+<a href="#" class="toggle minus" ></a>
+<span>12.11% (98.32%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/format/formatter.rb#4">&lt;Class::ProgressBar::Format::Formatter&gt;#process</a> [1 calls, 2 total]</span>
+<ul>
 <li class="color05" style="display:block">
 <a href="#" class="toggle plus" ></a>
-<span>6.14% (6.20%) JSON::Ext::Generator::GeneratorMethods::Hash#to_json [1 calls, 1 total]</span>
+<span>7.67% (63.33%) Array#each [2 calls, 34 total]</span>
+<ul style="display:none">
+<li class="color05" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>6.95% (90.67%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/format/molecule.rb#49">ProgressBar::Format::Molecule#lookup_value</a> [4 calls, 8 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>2.15% (30.90%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/time.rb#44">ProgressBar::Components::Time#estimated_with_friendly_oob</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>1.97% (91.88%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/time.rb#87">ProgressBar::Components::Time#estimated_with_elapsed_fallback</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>1.85% (93.66%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/time.rb#22">ProgressBar::Components::Time#estimated_with_label</a> [1 calls, 1 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>1.77% (95.63%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/time.rb#65">ProgressBar::Components::Time#estimated</a> [1 calls, 1 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>1.70% (96.01%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/time.rb#91">ProgressBar::Components::Time#estimated_seconds_remaining</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:block">
 <a href="#" class="toggle empty" ></a>
-<span>1.46% (23.79%) String#encode [54 calls, 54 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.46% (7.55%) String#to_s [28 calls, 28 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.36% (5.82%) Kernel#dup [1 calls, 1 total]</span>
+<span>1.49% (87.76%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#99">ProgressBar::Progress#unknown?</a> [1 calls, 3 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.18% (51.57%) Kernel#initialize_dup [1 calls, 22 total]</span>
+<span>0.03% (2.10%) Kernel#nil? [2 calls, 12 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.13% (7.40%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#95">ProgressBar::Progress#none?</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.11% (57.93%) JSON::Ext::Generator::State#initialize_copy [1 calls, 1 total]</span>
+<span>0.05% (42.71%) Float#zero? [1 calls, 1 total]</span>
+</li>
+</ul>
+</li>
+</ul>
 </li>
 </ul>
 </li>
@@ -927,47 +807,1961 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.34% (5.54%) Hash#keys [5 calls, 5 total]</span>
+<span>0.04% (2.20%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#33">ProgressBar::Progress#finished?</a> [1 calls, 40 total]</span>
+</li>
+</ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.13% (2.08%) Symbol#to_s [1 calls, 1 total]</span>
+<span>0.08% (3.61%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/time.rb#54">ProgressBar::Components::Time#out_of_bounds_time_format=</a> [1 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (38.53%) Array#include? [1 calls, 19 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>1.68% (24.21%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/time.rb#26">ProgressBar::Components::Time#elapsed_with_label</a> [1 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>1.60% (95.00%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/time.rb#79">ProgressBar::Components::Time#elapsed</a> [1 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.93% (58.21%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#57">ProgressBar::Timer#elapsed_whole_seconds</a> [1 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.72% (77.17%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#53">ProgressBar::Timer#elapsed_seconds</a> [1 calls, 20 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.40% (55.00%) Time#- [1 calls, 20 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.25% (63.57%) Numeric#quo [1 calls, 20 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.05% (21.60%) Integer#fdiv [1 calls, 20 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.05% (11.64%) Integer#- [1 calls, 20 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.23% (32.65%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/time.rb#15">ProgressBar::Time#now</a> [1 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.13% (55.54%) &lt;Class::Time&gt;#now [1 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.08% (59.56%) Time#initialize [1 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (40.77%) Integer#+ [1 calls, 22 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.04% (19.13%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/time.rb#19">ProgressBar::Time#unmocked_time_method</a> [1 calls, 22 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.13% (13.54%) Float#floor [1 calls, 5 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.33% (20.73%) String#% [1 calls, 5 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.15% (9.37%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#61">ProgressBar::Timer#divide_seconds</a> [1 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.06% (41.46%) Integer#divmod [2 calls, 6 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (1.89%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#31">ProgressBar::Timer#started?</a> [1 calls, 23 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>1.18% (17.02%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/bar.rb#57">ProgressBar::Components::Bar#complete_bar</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>1.09% (91.70%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/bar.rb#25">ProgressBar::Components::Bar#to_s</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.39% (36.30%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/bar.rb#43">ProgressBar::Components::Bar#standard_complete_string</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.29% (72.36%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/bar.rb#91">ProgressBar::Components::Bar#completed_length</a> [1 calls, 4 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.16% (56.87%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#83">ProgressBar::Progress#percentage_completed</a> [1 calls, 4 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.05% (30.05%) Integer#to_i [1 calls, 4 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.02% (13.75%) Kernel#nil? [1 calls, 12 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.04% (15.69%) Integer#floor [1 calls, 4 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (7.44%) String#* [1 calls, 5 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.29% (26.76%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/bar.rb#47">ProgressBar::Components::Bar#incomplete_string</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.17% (58.05%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/bar.rb#91">ProgressBar::Components::Bar#completed_length</a> [1 calls, 4 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.11% (63.73%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#83">ProgressBar::Progress#percentage_completed</a> [1 calls, 4 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (29.31%) Kernel#nil? [1 calls, 12 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.02% (21.69%) Integer#to_i [1 calls, 4 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.02% (12.57%) Integer#floor [1 calls, 4 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.05% (16.38%) String#* [1 calls, 5 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.09% (7.93%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#99">ProgressBar::Progress#unknown?</a> [1 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.04% (45.72%) Kernel#nil? [2 calls, 12 total]</span>
+</li>
+</ul>
+</li>
+</ul>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:block">
 <a href="#" class="toggle empty" ></a>
-<span>3.71% (3.74%) &lt;Class::IO&gt;#read [1 calls, 1 total]</span>
-</li>
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>1.29% (1.30%) Array#map [2 calls, 35 total]</span>
+<span>1.16% (16.69%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/percentage.rb#24">ProgressBar::Components::Percentage#justified_percentage_with_precision</a> [1 calls, 2 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.37% (28.75%) String#upcase [15 calls, 45 total]</span>
+<span>0.96% (82.98%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#107">ProgressBar::Progress#percentage_completed_with_precision</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.55% (56.70%) String#% [1 calls, 5 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.06% (6.43%) Integer#/ [2 calls, 4 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.05% (5.26%) Float#* [1 calls, 2 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.05% (4.93%) Integer#to_f [1 calls, 2 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.05% (4.90%) Kernel#nil? [1 calls, 12 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.04% (4.50%) Float#floor [1 calls, 5 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.53% (0.53%) String#split [1 calls, 37 total]</span>
+<span>0.07% (5.78%) String#rjust [1 calls, 2 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.38% (0.38%) Array#sort [1 calls, 7 total]</span>
+<span>0.03% (2.37%) String#to_s [1 calls, 38 total]</span>
+</li>
+</ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.37% (0.37%) Array#uniq [1 calls, 1 total]</span>
+<span>0.34% (4.92%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/format/molecule.rb#37">ProgressBar::Format::Molecule#bar_molecule?</a> [4 calls, 16 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.26% (75.81%) Array#include? [4 calls, 19 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.11% (40.58%) String#== [18 calls, 72 total]</span>
+</li>
+</ul>
+</li>
+</ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.28% (0.28%) Array#join [1 calls, 4 total]</span>
+<span>0.07% (1.05%) String#to_s [4 calls, 38 total]</span>
+</li>
+</ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.15% (0.15%) Array#count [3 calls, 6 total]</span>
+<span>0.37% (4.81%) String#gsub! [4 calls, 25 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.12% (1.57%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/format/molecule.rb#45">ProgressBar::Format::Molecule#full_key</a> [4 calls, 8 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>2.04% (16.84%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/format/string.rb#11">ProgressBar::Format::String#bar_molecule_placeholder_length</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>1.95% (95.54%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/format/string.rb#19">ProgressBar::Format::String#bar_molecules</a> [1 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>1.17% (60.13%) Array#select [1 calls, 5 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>1.10% (93.94%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/format/molecule.rb#37">ProgressBar::Format::Molecule#bar_molecule?</a> [4 calls, 16 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>1.01% (91.74%) Array#include? [4 calls, 19 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.85% (84.14%) String#== [18 calls, 72 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.04% (1.96%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/format/string.rb#23">ProgressBar::Format::String#molecules</a> [1 calls, 2 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>1.71% (14.09%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/format/string.rb#15">ProgressBar::Format::String#non_bar_molecules</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.97% (56.71%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/format/string.rb#23">ProgressBar::Format::String#molecules</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.85% (87.64%) String#scan [1 calls, 1 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.44% (51.82%) Class#new [4 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.35% (79.52%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/format/molecule.rb#32">ProgressBar::Format::Molecule#initialize</a> [4 calls, 4 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.09% (25.61%) String#to_sym [4 calls, 4 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.05% (13.46%) Hash#fetch [4 calls, 26 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.09% (11.07%) String#[] [4 calls, 4 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.63% (36.66%) Array#select [1 calls, 5 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.53% (84.12%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/format/molecule.rb#41">ProgressBar::Format::Molecule#non_bar_molecule?</a> [4 calls, 4 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.39% (74.77%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/format/molecule.rb#37">ProgressBar::Format::Molecule#bar_molecule?</a> [4 calls, 16 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.28% (71.80%) Array#include? [4 calls, 19 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.13% (46.02%) String#== [18 calls, 72 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.24% (1.99%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/format/string.rb#7">ProgressBar::Format::String#displayable_length</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.08% (34.50%) String#gsub [1 calls, 2 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.05% (20.29%) String#length [1 calls, 2 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.15% (1.28%) Kernel#dup [1 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.08% (52.81%) Kernel#initialize_dup [1 calls, 26 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.05% (63.10%) String#initialize_copy [1 calls, 2 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.05% (0.42%) String#gsub! [1 calls, 25 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.04% (0.31%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/format/string.rb#19">ProgressBar::Format::String#bar_molecules</a> [1 calls, 3 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.09% (0.77%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/output.rb#38">ProgressBar::Output#length</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (31.14%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/calculators/length.rb#14">ProgressBar::Calculators::Length#length</a> [1 calls, 3 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.26% (1.99%) IO#print [1 calls, 4 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.23% (86.39%) IO#write [1 calls, 4 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.24% (1.79%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/outputs/tty.rb#27">ProgressBar::Outputs::Tty#eol</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.16% (67.21%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/base.rb#74">ProgressBar::Base#stopped?</a> [1 calls, 21 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.08% (50.62%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/base.rb#80">ProgressBar::Base#finished?</a> [1 calls, 38 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (36.90%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#33">ProgressBar::Progress#finished?</a> [1 calls, 40 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (18.36%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#35">ProgressBar::Timer#stopped?</a> [1 calls, 24 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.08% (0.63%) IO#flush [1 calls, 2 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.06% (0.47%) String#+ [1 calls, 2 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>1.38% (8.27%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/calculators/length.rb#18">ProgressBar::Calculators::Length#length_changed?</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>1.26% (91.64%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/calculators/length.rb#25">ProgressBar::Calculators::Length#calculate_length</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>1.19% (94.21%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/calculators/length.rb#43">ProgressBar::Calculators::Length#terminal_width</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.87% (73.31%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/calculators/length.rb#57">ProgressBar::Calculators::Length#dynamic_width</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.63% (72.40%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/calculators/length.rb#73">ProgressBar::Calculators::Length#dynamic_width_via_output_stream_object</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.56% (88.25%) IO#winsize [1 calls, 2 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.07% (8.01%) IO#tty? [1 calls, 3 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.04% (4.90%) Kernel#respond_to? [1 calls, 10 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.23% (18.98%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/calculators/length.rb#95">ProgressBar::Calculators::Length#unix?</a> [1 calls, 2 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>1.21% (7.27%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/outputs/tty.rb#10">ProgressBar::Outputs::Tty#clear</a> [1 calls, 1 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.89% (73.24%) IO#print [2 calls, 4 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.80% (90.53%) IO#write [2 calls, 4 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.21% (17.63%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/output.rb#34">ProgressBar::Output#clear_string</a> [1 calls, 1 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.07% (33.06%) String#* [1 calls, 5 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.06% (28.45%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/calculators/length.rb#14">ProgressBar::Calculators::Length#length</a> [1 calls, 3 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.60% (3.59%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#48">ProgressBar::Timer#restart</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.46% (76.57%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#12">ProgressBar::Timer#start</a> [1 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.36% (78.77%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/time.rb#15">ProgressBar::Time#now</a> [1 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.22% (60.29%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/time.rb#19">ProgressBar::Time#unmocked_time_method</a> [1 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.17% (79.17%) Enumerable#find [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.14% (81.48%) Array#each [1 calls, 34 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.06% (42.92%) Kernel#respond_to? [4 calls, 10 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.10% (26.93%) &lt;Class::Time&gt;#now [1 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.06% (59.99%) Time#initialize [1 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.02% (39.92%) Integer#+ [1 calls, 22 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.04% (8.79%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#35">ProgressBar::Timer#stopped?</a> [1 calls, 24 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.07% (11.02%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#39">ProgressBar::Timer#reset</a> [1 calls, 2 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.06% (0.36%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#31">ProgressBar::Timer#started?</a> [1 calls, 23 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.18% (1.05%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/base.rb#74">ProgressBar::Base#stopped?</a> [1 calls, 21 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.07% (41.27%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/base.rb#80">ProgressBar::Base#finished?</a> [1 calls, 38 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (42.32%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#33">ProgressBar::Progress#finished?</a> [1 calls, 40 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (17.85%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#35">ProgressBar::Timer#stopped?</a> [1 calls, 24 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.24% (1.35%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#23">ProgressBar::Progress#start</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.17% (73.19%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#61">ProgressBar::Progress#progress=</a> [1 calls, 20 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.08% (44.88%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/calculators/running_average.rb#4">&lt;Class::ProgressBar::Calculators::RunningAverage&gt;#calculate</a> [1 calls, 20 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (41.34%) Integer#* [2 calls, 22 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (16.85%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#114">ProgressBar::Progress#absolute</a> [1 calls, 20 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.15% (0.87%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/base.rb#80">ProgressBar::Base#finished?</a> [1 calls, 38 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.06% (42.31%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#33">ProgressBar::Progress#finished?</a> [1 calls, 40 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.90% (4.84%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#12">ProgressBar::Timer#start</a> [1 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.73% (81.64%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/time.rb#15">ProgressBar::Time#now</a> [1 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.42% (56.97%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/time.rb#19">ProgressBar::Time#unmocked_time_method</a> [1 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.33% (79.13%) Enumerable#find [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.27% (80.79%) Array#each [1 calls, 34 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.12% (43.65%) Kernel#respond_to? [4 calls, 10 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.23% (31.20%) &lt;Class::Time&gt;#now [1 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.13% (57.49%) Time#initialize [1 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.05% (37.93%) Integer#+ [1 calls, 22 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.07% (7.99%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#35">ProgressBar::Timer#stopped?</a> [1 calls, 24 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>2.14% (9.29%) Class#new [8 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.74% (34.35%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#16">ProgressBar::Progress#initialize</a> [1 calls, 1 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.46% (62.55%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#23">ProgressBar::Progress#start</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.37% (81.18%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#61">ProgressBar::Progress#progress=</a> [1 calls, 20 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.15% (40.22%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/calculators/running_average.rb#4">&lt;Class::ProgressBar::Calculators::RunningAverage&gt;#calculate</a> [1 calls, 20 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.06% (38.65%) Integer#* [2 calls, 22 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.09% (22.89%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#114">ProgressBar::Progress#absolute</a> [1 calls, 20 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.13% (17.71%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#74">ProgressBar::Progress#total=</a> [1 calls, 1 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.05% (34.72%) NilClass#nil? [1 calls, 1 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.02% (3.05%) Hash#fetch [1 calls, 26 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.30% (14.07%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#8">ProgressBar::Timer#initialize</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.20% (66.26%) Class#new [1 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.07% (34.12%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/time.rb#11">ProgressBar::Time#initialize</a> [1 calls, 2 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.23% (10.94%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/time.rb#16">ProgressBar::Components::Time#initialize</a> [1 calls, 1 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.15% (63.53%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/time.rb#54">ProgressBar::Components::Time#out_of_bounds_time_format=</a> [1 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.07% (45.65%) Array#include? [1 calls, 19 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.22% (10.31%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/rate.rb#10">ProgressBar::Components::Rate#initialize</a> [1 calls, 1 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.07% (29.66%) Kernel#lambda [1 calls, 1 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.15% (7.01%) String#initialize [1 calls, 1 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.14% (6.42%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/bar.rb#17">ProgressBar::Components::Bar#initialize</a> [1 calls, 1 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.09% (4.08%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/title.rb#8">ProgressBar::Components::Title#initialize</a> [1 calls, 1 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.08% (3.72%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/percentage.rb#6">ProgressBar::Components::Percentage#initialize</a> [1 calls, 1 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>1.28% (5.58%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/output.rb#17">&lt;Class::ProgressBar::Output&gt;#detect</a> [1 calls, 1 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.92% (71.79%) Class#new [1 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.87% (94.76%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/output.rb#7">ProgressBar::Output#initialize</a> [1 calls, 1 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.68% (78.21%) Class#new [2 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.31% (45.99%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/calculators/length.rb#8">ProgressBar::Calculators::Length#initialize</a> [1 calls, 1 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.23% (71.61%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/calculators/length.rb#33">ProgressBar::Calculators::Length#length_override=</a> [1 calls, 1 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.13% (55.66%) &lt;Object::Object&gt;#[] [1 calls, 1 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.30% (43.72%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/throttle.rb#8">ProgressBar::Throttle#initialize</a> [1 calls, 1 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.15% (49.96%) Class#new [1 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.11% (73.81%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#8">ProgressBar::Timer#initialize</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.07% (64.48%) Class#new [1 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.04% (49.81%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/time.rb#11">ProgressBar::Time#initialize</a> [1 calls, 2 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (10.69%) Hash#fetch [1 calls, 26 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.16% (12.24%) IO#tty? [1 calls, 3 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.05% (3.63%) Kernel#is_a? [1 calls, 1 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.31% (1.36%) Hash#merge [2 calls, 23 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.18% (58.50%) Kernel#initialize_dup [2 calls, 26 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.12% (63.82%) Hash#initialize_copy [2 calls, 23 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.08% (0.33%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/outputs/tty.rb#23">ProgressBar::Outputs::Tty#resolve_format</a> [1 calls, 1 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.07% (0.32%) Hash#fetch [2 calls, 26 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color2" style="display:block">
+<a href="#" class="toggle minus" ></a>
+<span>22.47% (22.57%) Array#each [3 calls, 34 total]</span>
+<ul>
+<li class="color1" style="display:block">
+<a href="#" class="toggle minus" ></a>
+<span>16.39% (72.95%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/base.rb#92">ProgressBar::Base#increment</a> [18 calls, 18 total]</span>
+<ul>
+<li class="color1" style="display:block">
+<a href="#" class="toggle minus" ></a>
+<span>15.98% (97.53%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/base.rb#176">ProgressBar::Base#update_progress</a> [18 calls, 19 total]</span>
+<ul>
+<li class="color1" style="display:block">
+<a href="#" class="toggle minus" ></a>
+<span>15.62% (97.72%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/output.rb#42">ProgressBar::Output#with_refresh</a> [18 calls, 19 total]</span>
+<ul>
+<li class="color1" style="display:block">
+<a href="#" class="toggle minus" ></a>
+<span>11.88% (76.07%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/output.rb#47">ProgressBar::Output#refresh</a> [18 calls, 19 total]</span>
+<ul>
+<li class="color05" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>9.92% (83.50%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/throttle.rb#15">ProgressBar::Throttle#choke</a> [18 calls, 19 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>5.36% (54.01%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/output.rb#63">ProgressBar::Output#print_and_flush</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>4.79% (89.36%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/outputs/tty.rb#15">ProgressBar::Outputs::Tty#bar_update_string</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>4.74% (99.05%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/base.rb#120">ProgressBar::Base#to_s</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>4.61% (97.22%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/format/formatter.rb#4">&lt;Class::ProgressBar::Format::Formatter&gt;#process</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>3.93% (85.25%) Array#each [2 calls, 34 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>3.40% (86.61%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/format/molecule.rb#49">ProgressBar::Format::Molecule#lookup_value</a> [4 calls, 8 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.80% (23.64%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/time.rb#44">ProgressBar::Components::Time#estimated_with_friendly_oob</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.67% (83.34%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/time.rb#87">ProgressBar::Components::Time#estimated_with_elapsed_fallback</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.59% (88.68%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/time.rb#26">ProgressBar::Components::Time#elapsed_with_label</a> [1 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.54% (91.46%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/time.rb#79">ProgressBar::Components::Time#elapsed</a> [1 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.27% (50.40%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#57">ProgressBar::Timer#elapsed_whole_seconds</a> [1 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.13% (47.14%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#53">ProgressBar::Timer#elapsed_seconds</a> [1 calls, 20 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.10% (76.83%) Time#- [1 calls, 20 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.05% (46.61%) Numeric#quo [1 calls, 20 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.02% (42.14%) Integer#fdiv [1 calls, 20 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.02% (20.15%) Integer#- [1 calls, 20 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (11.37%) Float#floor [1 calls, 5 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.09% (16.72%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#61">ProgressBar::Timer#divide_seconds</a> [1 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.04% (39.05%) Integer#divmod [2 calls, 6 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.07% (13.41%) String#% [1 calls, 5 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.02% (4.54%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#31">ProgressBar::Timer#started?</a> [1 calls, 23 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (4.05%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#33">ProgressBar::Progress#finished?</a> [1 calls, 40 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.08% (9.48%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/time.rb#54">ProgressBar::Components::Time#out_of_bounds_time_format=</a> [1 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (33.05%) Array#include? [1 calls, 19 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.76% (22.30%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/bar.rb#57">ProgressBar::Components::Bar#complete_bar</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.70% (92.08%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/bar.rb#25">ProgressBar::Components::Bar#to_s</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.28% (40.33%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/bar.rb#47">ProgressBar::Components::Bar#incomplete_string</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.15% (54.86%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/bar.rb#91">ProgressBar::Components::Bar#completed_length</a> [1 calls, 4 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.10% (63.48%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#83">ProgressBar::Progress#percentage_completed</a> [1 calls, 4 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (33.10%) Kernel#nil? [1 calls, 12 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.02% (19.35%) Integer#to_i [1 calls, 4 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.02% (12.28%) Integer#floor [1 calls, 4 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (11.37%) String#* [1 calls, 5 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.26% (37.53%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/bar.rb#43">ProgressBar::Components::Bar#standard_complete_string</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.19% (71.52%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/bar.rb#91">ProgressBar::Components::Bar#completed_length</a> [1 calls, 4 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.11% (59.21%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#83">ProgressBar::Progress#percentage_completed</a> [1 calls, 4 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (27.44%) Integer#to_i [1 calls, 4 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.02% (17.76%) Kernel#nil? [1 calls, 12 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (15.00%) Integer#floor [1 calls, 4 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (13.31%) String#* [1 calls, 5 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.07% (10.62%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#99">ProgressBar::Progress#unknown?</a> [1 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (35.47%) Kernel#nil? [2 calls, 12 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.66% (19.25%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/time.rb#26">ProgressBar::Components::Time#elapsed_with_label</a> [1 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.61% (93.29%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/time.rb#79">ProgressBar::Components::Time#elapsed</a> [1 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.31% (51.03%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#57">ProgressBar::Timer#elapsed_whole_seconds</a> [1 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.24% (76.78%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#53">ProgressBar::Timer#elapsed_seconds</a> [1 calls, 20 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.20% (83.58%) Time#- [1 calls, 20 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.06% (32.12%) Numeric#quo [1 calls, 20 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (44.70%) Integer#fdiv [1 calls, 20 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (14.91%) Integer#- [1 calls, 20 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (10.75%) Float#floor [1 calls, 5 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.10% (16.58%) String#% [1 calls, 5 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.08% (13.64%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#61">ProgressBar::Timer#divide_seconds</a> [1 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (35.84%) Integer#divmod [2 calls, 6 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (5.46%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#31">ProgressBar::Timer#started?</a> [1 calls, 23 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.57% (16.68%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/components/percentage.rb#24">ProgressBar::Components::Percentage#justified_percentage_with_precision</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.47% (82.84%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#107">ProgressBar::Progress#percentage_completed_with_precision</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.19% (39.88%) String#% [1 calls, 5 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.09% (20.03%) Integer#/ [2 calls, 4 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.04% (7.63%) Float#floor [1 calls, 5 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.02% (4.83%) Integer#to_f [1 calls, 2 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.02% (4.81%) Float#* [1 calls, 2 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.02% (4.49%) Kernel#nil? [1 calls, 12 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (5.08%) String#rjust [1 calls, 2 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.02% (3.60%) String#to_s [1 calls, 38 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.34% (10.08%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/format/molecule.rb#37">ProgressBar::Format::Molecule#bar_molecule?</a> [4 calls, 16 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.26% (75.30%) Array#include? [4 calls, 19 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.11% (41.33%) String#== [18 calls, 72 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.05% (1.54%) String#to_s [4 calls, 38 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.26% (6.50%) String#gsub! [4 calls, 25 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.08% (2.04%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/format/molecule.rb#45">ProgressBar::Format::Molecule#full_key</a> [4 calls, 8 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.20% (4.35%) Kernel#dup [1 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.13% (65.80%) Kernel#initialize_dup [1 calls, 26 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (19.72%) String#initialize_copy [1 calls, 2 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.19% (4.08%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/format/string.rb#7">ProgressBar::Format::String#displayable_length</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.08% (40.34%) String#length [1 calls, 2 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.05% (28.70%) String#gsub [1 calls, 2 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.04% (0.93%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/format/string.rb#19">ProgressBar::Format::String#bar_molecules</a> [1 calls, 3 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.04% (0.92%) String#gsub! [1 calls, 25 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.04% (0.79%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/format/string.rb#15">ProgressBar::Format::String#non_bar_molecules</a> [1 calls, 2 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (0.75%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/format/string.rb#11">ProgressBar::Format::String#bar_molecule_placeholder_length</a> [1 calls, 2 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.07% (1.51%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/output.rb#38">ProgressBar::Output#length</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.04% (51.25%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/calculators/length.rb#14">ProgressBar::Calculators::Length#length</a> [1 calls, 3 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.25% (4.65%) IO#print [1 calls, 4 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.21% (84.20%) IO#write [1 calls, 4 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.11% (2.09%) IO#flush [1 calls, 2 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.10% (1.93%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/outputs/tty.rb#27">ProgressBar::Outputs::Tty#eol</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.06% (61.48%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/base.rb#74">ProgressBar::Base#stopped?</a> [1 calls, 21 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (42.16%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#35">ProgressBar::Timer#stopped?</a> [1 calls, 24 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (0.62%) String#+ [1 calls, 2 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>2.48% (25.02%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#53">ProgressBar::Timer#elapsed_seconds</a> [17 calls, 20 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>1.34% (54.06%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/time.rb#15">ProgressBar::Time#now</a> [17 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.69% (51.44%) &lt;Class::Time&gt;#now [17 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.33% (48.08%) Time#initialize [17 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.10% (29.65%) Integer#+ [17 calls, 22 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.22% (16.51%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/time.rb#19">ProgressBar::Time#unmocked_time_method</a> [17 calls, 22 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.72% (28.95%) Time#- [17 calls, 20 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.30% (41.98%) Numeric#quo [17 calls, 20 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.11% (36.32%) Integer#fdiv [17 calls, 20 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.10% (13.59%) Integer#- [17 calls, 20 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.64% (6.48%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/calculators/length.rb#18">ProgressBar::Calculators::Length#length_changed?</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.55% (85.90%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/calculators/length.rb#25">ProgressBar::Calculators::Length#calculate_length</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.51% (93.25%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/calculators/length.rb#43">ProgressBar::Calculators::Length#terminal_width</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.28% (55.18%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/calculators/length.rb#57">ProgressBar::Calculators::Length#dynamic_width</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.11% (37.55%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/calculators/length.rb#73">ProgressBar::Calculators::Length#dynamic_width_via_output_stream_object</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.07% (62.29%) IO#winsize [1 calls, 2 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.08% (29.23%) IO#tty? [1 calls, 3 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (10.46%) Kernel#respond_to? [1 calls, 10 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.12% (23.30%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/calculators/length.rb#95">ProgressBar::Calculators::Length#unix?</a> [1 calls, 2 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.31% (3.10%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#48">ProgressBar::Timer#restart</a> [1 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.23% (73.63%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#12">ProgressBar::Timer#start</a> [1 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.14% (63.87%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/time.rb#15">ProgressBar::Time#now</a> [1 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.08% (56.37%) &lt;Class::Time&gt;#now [1 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.04% (53.63%) Time#initialize [1 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.02% (42.14%) Integer#+ [1 calls, 22 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (17.59%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/time.rb#19">ProgressBar::Time#unmocked_time_method</a> [1 calls, 22 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.02% (10.87%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#35">ProgressBar::Timer#stopped?</a> [1 calls, 24 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.04% (11.49%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#39">ProgressBar::Timer#reset</a> [1 calls, 2 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.22% (2.20%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#31">ProgressBar::Timer#started?</a> [18 calls, 23 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.15% (1.54%) Hash#fetch [18 calls, 26 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>1.22% (10.30%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/base.rb#74">ProgressBar::Base#stopped?</a> [18 calls, 21 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.55% (44.79%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/base.rb#80">ProgressBar::Base#finished?</a> [17 calls, 38 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.19% (34.90%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#33">ProgressBar::Progress#finished?</a> [17 calls, 40 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.22% (18.25%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#35">ProgressBar::Timer#stopped?</a> [18 calls, 24 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>1.81% (11.58%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#37">ProgressBar::Progress#increment</a> [18 calls, 18 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>1.33% (73.63%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#61">ProgressBar::Progress#progress=</a> [18 calls, 20 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.48% (35.85%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/calculators/running_average.rb#4">&lt;Class::ProgressBar::Calculators::RunningAverage&gt;#calculate</a> [18 calls, 20 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.14% (29.64%) Integer#* [18 calls, 22 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.23% (17.29%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#114">ProgressBar::Progress#absolute</a> [18 calls, 20 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.63% (4.04%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/base.rb#80">ProgressBar::Base#finished?</a> [18 calls, 38 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.22% (35.40%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/progress.rb#33">ProgressBar::Progress#finished?</a> [18 calls, 40 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.37% (2.35%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#17">ProgressBar::Timer#stop</a> [1 calls, 1 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.26% (69.69%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/time.rb#15">ProgressBar::Time#now</a> [1 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.17% (65.68%) &lt;Class::Time&gt;#now [1 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.07% (39.46%) Time#initialize [1 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (42.17%) Integer#+ [1 calls, 22 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.04% (14.43%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/time.rb#19">ProgressBar::Time#unmocked_time_method</a> [1 calls, 22 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.02% (6.64%) <a href="file:///Users/vitaliytokmianin/.rvm/gems/ruby-2.4.3/gems/ruby-progressbar-1.10.1/lib/ruby-progressbar/timer.rb#31">ProgressBar::Timer#started?</a> [1 calls, 23 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>1.64% (7.31%) <a href="file:///Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb#133">Object#parse_session</a> [15 calls, 15 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.45% (27.47%) String#split [15 calls, 37 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.98% (4.36%) Enumerable#all? [15 calls, 18 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.72% (73.92%) Array#each [15 calls, 34 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.64% (2.87%) String#split [18 calls, 37 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.46% (2.06%) Array#select [3 calls, 5 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.35% (1.54%) Class#new [3 calls, 22 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.17% (49.13%) <a href="file:///Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb#12">User#initialize</a> [3 calls, 3 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.31% (1.36%) <a href="file:///Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb#123">Object#parse_user</a> [3 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.11% (37.16%) String#split [3 calls, 37 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color2" style="display:block">
+<a href="#" class="toggle minus" ></a>
+<span>21.54% (21.64%) <a href="file:///Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb#144">Object#collect_stats_from_users</a> [7 calls, 7 total]</span>
+<ul>
+<li class="color2" style="display:block">
+<a href="#" class="toggle minus" ></a>
+<span>21.38% (99.24%) Array#each [7 calls, 34 total]</span>
+<ul>
+<li class="color1" style="display:block">
+<a href="#" class="toggle minus" ></a>
+<span>15.24% (71.31%) Array#map [33 calls, 35 total]</span>
+<ul>
+<li class="color1" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>11.45% (75.15%) &lt;Class::Date&gt;#parse [15 calls, 15 total]</span>
+<ul>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.97% (8.49%) Regexp#match [30 calls, 30 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.55% (4.83%) String#gsub! [15 calls, 25 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.46% (4.00%) MatchData#begin [15 calls, 15 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.32% (2.78%) String#[]= [15 calls, 15 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.16% (1.36%) Integer#div [15 calls, 15 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.13% (1.16%) MatchData#end [15 calls, 15 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>1.40% (9.18%) Date#iso8601 [15 calls, 15 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.24% (1.61%) String#to_i [30 calls, 30 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.13% (0.88%) String#upcase [15 calls, 45 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>1.57% (7.33%) Hash#merge [21 calls, 23 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>1.09% (69.74%) Kernel#initialize_dup [21 calls, 26 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.85% (77.43%) Hash#initialize_copy [21 calls, 23 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.80% (3.76%) Array#sort [6 calls, 7 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.44% (54.78%) Date#&lt;=&gt; [23 calls, 23 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.53% (2.48%) Array#any? [3 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.11% (21.42%) String#upcase [11 calls, 45 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.38% (1.76%) Enumerable#all? [3 calls, 18 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.31% (82.60%) Array#each [3 calls, 34 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.05% (16.96%) String#upcase [4 calls, 45 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.12% (0.54%) Array#join [3 calls, 4 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.11% (0.50%) Integer#to_s [6 calls, 6 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.08% (0.36%) Array#reverse [3 calls, 3 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.07% (0.35%) Array#max [3 calls, 3 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.06% (0.30%) Array#sum [3 calls, 3 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.04% (0.17%) Array#count [3 calls, 6 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color1" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>18.86% (18.94%) &lt;Module::GC&gt;#disable [1 calls, 1 total]</span>
+</li>
+<li class="color05" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>7.15% (7.18%) &lt;Class::IO&gt;#write [1 calls, 1 total]</span>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>2.65% (2.66%) JSON::Ext::Generator::GeneratorMethods::Hash#to_json [1 calls, 1 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.64% (24.14%) String#encode [54 calls, 54 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.24% (9.11%) String#to_s [28 calls, 38 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.16% (6.21%) Kernel#dup [1 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.09% (57.08%) Kernel#initialize_dup [1 calls, 26 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.05% (53.59%) JSON::Ext::Generator::State#initialize_copy [1 calls, 1 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.10% (3.61%) Hash#keys [5 calls, 5 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.05% (1.91%) Symbol#to_s [1 calls, 1 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>1.52% (1.53%) &lt;Class::IO&gt;#read [1 calls, 1 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.58% (0.58%) Array#map [2 calls, 35 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.24% (40.77%) String#upcase [15 calls, 45 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.24% (0.24%) String#split [1 calls, 37 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.18% (0.18%) Array#uniq [1 calls, 1 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.15% (0.15%) Array#sort [1 calls, 7 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.12% (0.12%) Array#join [1 calls, 4 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.07% (0.07%) Array#count [3 calls, 6 total]</span>
 </li>
 </ul>
 </li>
