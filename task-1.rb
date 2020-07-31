@@ -59,16 +59,8 @@ def work(disable_gc: true)
   end
 
   report['uniqueBrowsersCount'] = uniqueBrowsers.count
-
   report['totalSessions'] = sessions.count
-
-  report['allBrowsers'] =
-    sessions
-      .map { |s| s['browser'] }
-      .map { |b| b.upcase }
-      .sort
-      .uniq
-      .join(',')
+  report['allBrowsers'] = sessions.map { |s| s['browser'].upcase }.sort.uniq.join(',')
 
   # Статистика по пользователям
   users_objects = []
@@ -97,7 +89,7 @@ def work(disable_gc: true)
       # Всегда использовал только Chrome?
       'alwaysUsedChrome' => user.sessions.all? { |s| s['browser'].upcase =~ /CHROME/ },
       # Даты сессий через запятую в обратном порядке в формате iso8601
-      'dates' => user.sessions.map{|s| s['date']}.map {|d| Date.iso8601(d)}.sort.reverse
+      'dates' => user.sessions.map{|s| s['date']}.sort.reverse
     }
   end
 

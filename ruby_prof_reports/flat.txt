@@ -1,51 +1,45 @@
 Measure Mode: wall_time
-Thread ID: 70102489995180
-Fiber ID: 70102490376960
-Total: 0.000777
+Thread ID: 70262443964340
+Fiber ID: 70262456592780
+Total: 0.000735
 Sort by: self_time
 
  %self      total      self      wait     child     calls  name                           location
- 21.46      0.000     0.000     0.000     0.000        1   <Class::IO>#write              
- 14.74      0.000     0.000     0.000     0.000       15   <Class::Date>#iso8601          
-  9.52      0.000     0.000     0.000     0.000       22  *Array#each                     
-  6.27      0.000     0.000     0.000     0.000       37   String#split                   
-  4.29      0.000     0.000     0.000     0.000       15   Date#to_s                      
-  4.28      0.000     0.000     0.000     0.000       17   Array#map                      
-  4.19      0.000     0.000     0.000     0.000        1   <Class::IO>#read               
-  3.95      0.000     0.000     0.000     0.000        1   JSON::Ext::Generator::GeneratorMethods::Hash#to_json 
-  2.86      0.000     0.000     0.000     0.000       15   Regexp#match                   
-  2.66      0.000     0.000     0.000     0.000       15   Object#parse_session           /Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb:117
-  2.45      0.000     0.000     0.000     0.000       54   String#encode                  
-  2.06      0.000     0.000     0.000     0.000       45   String#upcase                  
-  1.95      0.000     0.000     0.000     0.000       15   JSON::Ext::Generator::GeneratorMethods::Object#to_json 
-  1.54      0.001     0.000     0.000     0.001        1   Object#work                    /Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb:18
-  1.50      0.000     0.000     0.000     0.000        7   Array#sort                     
-  1.33      0.000     0.000     0.000     0.000        3   Array#select                   
-  1.30      0.000     0.000     0.000     0.000       18   Enumerable#all?                
-  1.29      0.000     0.000     0.000     0.000        3   Array#any?                     
-  1.25      0.000     0.000     0.000     0.000       23   Date#<=>                       
-  1.22      0.000     0.000     0.000     0.000        3   Array#sum                      
-  1.20      0.001     0.000     0.000     0.001        1   [global]#                      ruby-prof-flat.rb:7
-  0.85      0.000     0.000     0.000     0.000        3   Hash#merge                     
+ 28.89      0.000     0.000     0.000     0.000        1   <Class::IO>#write              
+ 13.37      0.000     0.000     0.000     0.000       22  *Array#each                     
+  7.32      0.000     0.000     0.000     0.000       37   String#split                   
+  6.35      0.000     0.000     0.000     0.000        1   <Class::IO>#read               
+  6.23      0.000     0.000     0.000     0.000        1   JSON::Ext::Generator::GeneratorMethods::Hash#to_json 
+  4.89      0.000     0.000     0.000     0.000       13   Array#map                      
+  3.65      0.000     0.000     0.000     0.000       15   Object#parse_session           /Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb:109
+  3.38      0.000     0.000     0.000     0.000       18   Enumerable#all?                
+  2.81      0.000     0.000     0.000     0.000       54   String#encode                  
+  2.45      0.001     0.000     0.000     0.001        1   Object#work                    /Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb:18
+  2.03      0.000     0.000     0.000     0.000        3   Array#any?                     
+  2.01      0.000     0.000     0.000     0.000        3   Array#select                   
+  1.91      0.000     0.000     0.000     0.000       45   String#upcase                  
+  1.91      0.001     0.000     0.000     0.001        1   [global]#                      ruby-prof-flat.rb:7
+  1.69      0.000     0.000     0.000     0.000        7   Array#sort                     
+  1.20      0.000     0.000     0.000     0.000        3   Hash#merge                     
+  1.10      0.000     0.000     0.000     0.000       30   String#to_i                    
+  0.92      0.000     0.000     0.000     0.000        4   Array#join                     
+  0.84      0.000     0.000     0.000     0.000       28   String#to_s                    
+  0.81      0.000     0.000     0.000     0.000        3   Object#parse_user              /Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb:99
   0.81      0.000     0.000     0.000     0.000        3   Class#new                      
-  0.70      0.000     0.000     0.000     0.000       30   String#to_i                    
-  0.68      0.000     0.000     0.000     0.000        4   Array#join                     
-  0.66      0.000     0.000     0.000     0.000        3   User#initialize                /Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb:12
-  0.59      0.000     0.000     0.000     0.000        1   Kernel#dup                     
-  0.52      0.000     0.000     0.000     0.000       28   String#to_s                    
-  0.51      0.000     0.000     0.000     0.000        3   Object#parse_user              /Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb:107
-  0.43      0.000     0.000     0.000     0.000       15   Integer#div                    
-  0.43      0.000     0.000     0.000     0.000        1   Array#uniq                     
-  0.38      0.000     0.000     0.000     0.000        6   Integer#to_s                   
-  0.34      0.000     0.000     0.000     0.000        6   Array#count                    
-  0.33      0.000     0.000     0.000     0.000        4   Kernel#initialize_dup          
-  0.27      0.000     0.000     0.000     0.000        3   Array#reverse                  
-  0.27      0.000     0.000     0.000     0.000        3   Array#max                      
-  0.26      0.000     0.000     0.000     0.000        5   Hash#keys                      
-  0.22      0.000     0.000     0.000     0.000        1   Object#collect_stats_from_users /Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb:128
-  0.16      0.000     0.000     0.000     0.000        3   Hash#initialize_copy           
-  0.15      0.000     0.000     0.000     0.000        1   JSON::Ext::Generator::State#initialize_copy 
-  0.15      0.000     0.000     0.000     0.000        1   Symbol#to_s                    
+  0.68      0.000     0.000     0.000     0.000        1   Array#uniq                     
+  0.64      0.000     0.000     0.000     0.000        3   User#initialize                /Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb:12
+  0.46      0.000     0.000     0.000     0.000        6   Array#count                    
+  0.45      0.000     0.000     0.000     0.000        4   Kernel#initialize_dup          
+  0.42      0.000     0.000     0.000     0.000        5   Hash#keys                      
+  0.39      0.000     0.000     0.000     0.000        3   Array#max                      
+  0.37      0.000     0.000     0.000     0.000        6   Integer#to_s                   
+  0.36      0.000     0.000     0.000     0.000        1   Kernel#dup                     
+  0.33      0.000     0.000     0.000     0.000        1   Object#collect_stats_from_users /Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb:120
+  0.31      0.000     0.000     0.000     0.000        3   Array#reverse                  
+  0.29      0.000     0.000     0.000     0.000        3   Array#sum                      
+  0.27      0.000     0.000     0.000     0.000        1   Symbol#to_s                    
+  0.25      0.000     0.000     0.000     0.000        3   Hash#initialize_copy           
+  0.22      0.000     0.000     0.000     0.000        1   JSON::Ext::Generator::State#initialize_copy 
 
 * recursively called methods
 
