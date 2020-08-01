@@ -24,17 +24,21 @@ def work(disable_gc: true)
 
   @current_users = []
   @current_sessions = []
+  uniqueBrowsers = []
 
   file_lines.each do |line|
     cols = line.split(',')
 
     if cols[0] == 'user'
+      # Инициализация пользователя
       @current_users << parse_user(cols)
     else
       # Статистика по пользователям
       session = parse_session(cols)
       @current_users.last.sessions << session
       @current_sessions << session
+      # Подсчёт количества уникальных браузеров
+      uniqueBrowsers << session[:browser]
     end
   end
 
@@ -57,14 +61,7 @@ def work(disable_gc: true)
 
   report[:totalUsers] = @current_users.count
 
-  # Подсчёт количества уникальных браузеров
-  uniqueBrowsers = []
-  @current_sessions.each do |session|
-    browser = session[:browser]
-    uniqueBrowsers += [browser] if uniqueBrowsers.all? { |b| b != browser }
-  end
-
-  report['uniqueBrowsersCount'] = uniqueBrowsers.count
+  report['uniqueBrowsersCount'] = uniqueBrowsers.uniq.count
   report['totalSessions'] = @current_sessions.count
   report['allBrowsers'] = @current_sessions.map { |s| s[:browser].upcase }.sort.uniq.join(',')
 
