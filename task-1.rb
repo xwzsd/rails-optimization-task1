@@ -9,11 +9,14 @@ require 'readline'
 
 class User
   attr_reader :attributes
-  attr_accessor :sessions
+  attr_accessor :sessions, :browsers, :dates, :session_times
 
   def initialize(attributes)
     @attributes = attributes
     @sessions = []
+    @browsers = []
+    @dates = []
+    @session_times = []
   end
 end
 
@@ -38,10 +41,13 @@ def work(disable_gc: true)
       # Статистика по пользователям
       session = parse_session(cols)
       @current_users.last.sessions << session
+      @current_users.last.browsers << session[:browser].upcase
+      @current_users.last.dates << session[:date]
+      @current_users.last.session_times << session[:time].to_i
       @current_sessions << session
       collect_stats_from_users(report, @current_users.last)
       # Подсчёт количества уникальных браузеров
-      uniqueBrowsers << session[:browser]
+      uniqueBrowsers << session[:browser].upcase
     end
   end
 
@@ -64,7 +70,7 @@ def work(disable_gc: true)
 
   report[:uniqueBrowsersCount] = uniqueBrowsers.uniq.count
   report[:totalSessions] = @current_sessions.count
-  report[:allBrowsers] = @current_sessions.map { |s| s[:browser].upcase }.sort.uniq.join(',')
+  report[:allBrowsers] = uniqueBrowsers.sort.uniq.join(',')
 
   File.write('result.json', "#{report.to_json}\n")
 end
@@ -92,19 +98,19 @@ end
 def collect_stats_from_users(report, user)
   user_stats ||= {
     # Собираем количество сессий по пользователям
-    sessionsCount:  user.sessions.count,
+    sessionsCount:  user.sessions.size,
     # Собираем количество времени по пользователям
-    totalTime: user.sessions.map { |s| s[:time].to_i }.sum.to_s + ' min.',
+    totalTime: "#{user.session_times.sum} min.",
     # Выбираем самую длинную сессию пользователя
-    longestSession: user.sessions.map { |s| s[:time].to_i }.max.to_s + ' min.',
+    longestSession: "#{user.session_times.max} min.",
     # Браузеры пользователя через запятую
-    browsers: user.sessions.map { |s| s[:browser].upcase }.sort.join(', '),
+    browsers: user.browsers.sort.join(', '),
     # Хоть раз использовал IE?
     usedIE: user.sessions.any? { |s| s[:browser].upcase =~ /INTERNET EXPLORER/ },
     # Всегда использовал только Chrome?
     alwaysUsedChrome: user.sessions.all? { |s| s[:browser].upcase =~ /CHROME/ },
     # Даты сессий через запятую в обратном порядке в формате iso8601
-    dates: user.sessions.map{|s| s[:date]}.sort.reverse
+    dates: user.dates.sort.reverse
   }
 
   user_key = "#{user.attributes[:first_name]}" + ' ' + "#{user.attributes[:last_name]}"
