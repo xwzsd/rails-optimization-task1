@@ -1,3 +1,6 @@
+# ruby ruby-prof-call-tree.rb
+# qcachegrind ruby_prof_reports/callgrind.callgrind.out.6865
+
 require 'ruby-prof'
 require_relative 'task-1.rb'
 

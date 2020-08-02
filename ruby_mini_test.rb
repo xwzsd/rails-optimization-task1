@@ -1,3 +1,5 @@
+# ruby ruby_mini_test.rb
+
 require 'minitest/autorun'
 require_relative 'task-1'
 

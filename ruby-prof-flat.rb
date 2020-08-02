@@ -1,3 +1,5 @@
+# ruby ruby-prof-flat.rb
+
 require 'ruby-prof'
 require_relative 'task-1.rb'
 
