@@ -1,45 +1,39 @@
 Measure Mode: wall_time
-Thread ID: 70282681481140
-Fiber ID: 70282698176420
-Total: 0.245365
+Thread ID: 260
+Fiber ID: 240
+Total: 0.077307
 Sort by: self_time
 
  %self      total      self      wait     child     calls  name                           location
- 17.65      0.212     0.043     0.000     0.168     8465  *Array#each                     
- 17.26      0.135     0.042     0.000     0.093     8464   Object#collect_stats_from_users /Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb:98
-  8.80      0.027     0.022     0.000     0.005     8464   Array#any?                     
-  6.20      0.015     0.015     0.000     0.000    16929   Array#sort                     
-  5.92      0.015     0.015     0.000     0.000    10001   String#split                   
-  4.85      0.012     0.012     0.000     0.000    48465   String#upcase                  
-  4.79      0.024     0.012     0.000     0.012        1   JSON::Ext::Generator::GeneratorMethods::Hash#to_json 
-  4.69      0.011     0.011     0.000     0.000     8464   Object#parse_session           /Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb:88
-  3.75      0.009     0.009     0.000     0.000     8464   Hash#initialize_copy           
-  3.21      0.020     0.008     0.000     0.012     8464   Hash#merge                     
-  3.14      0.008     0.008     0.000     0.000    25366   String#encode                  
-  2.99      0.007     0.007     0.000     0.000     8465   Array#join                     
-  2.92      0.007     0.007     0.000     0.000    42320   Array#last                     
-  1.66      0.016     0.004     0.000     0.012     8464   Enumerable#all?                
-  1.64      0.004     0.004     0.000     0.000    16928   Integer#to_s                   
-  1.18      0.012     0.003     0.000     0.009     8465   Kernel#initialize_dup          
-  1.07      0.003     0.003     0.000     0.000    10757   Symbol#to_s                    
-  1.03      0.003     0.003     0.000     0.000        2   Array#uniq                     
-  0.92      0.002     0.002     0.000     0.000     8464   Array#sum                      
-  0.91      0.002     0.002     0.000     0.000     8464   Array#reverse                  
-  0.90      0.002     0.002     0.000     0.000     8464   String#to_i                    
-  0.85      0.002     0.002     0.000     0.000     1536   User#initialize                /Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb:14
-  0.78      0.002     0.002     0.000     0.000     8464   Array#max                      
-  0.71      0.005     0.002     0.000     0.003     1536   Object#parse_user              /Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb:78
-  0.52      0.001     0.001     0.000     0.000        1   <Class::IO>#read               
-  0.47      0.001     0.001     0.000     0.000     1538   Hash#keys                      
-  0.38      0.003     0.001     0.000     0.002     1536   Class#new                      
-  0.28      0.001     0.001     0.000     0.000        1   <Module::GC>#disable           
-  0.27      0.001     0.001     0.000     0.000        1   <Class::IO>#write              
-  0.15      0.245     0.000     0.000     0.245        1   Object#work                    /Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb:23
-  0.10      0.000     0.000     0.000     0.000     1536   String#to_s                    
-  0.01      0.245     0.000     0.000     0.245        1   [global]#                      ruby-prof-flat.rb:9
+ 28.67      0.062     0.022     0.000     0.040        2   Array#each                     
+ 12.57      0.010     0.010     0.000     0.000    10001   String#split                   
+  7.99      0.006     0.006     0.000     0.000        1   <Class::IO>#write              
+  6.93      0.005     0.005     0.000     0.000    23399   String#upcase                  
+  6.20      0.016     0.005     0.000     0.011     1536   Object#collect_stats_from_users /Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb:101
+  5.92      0.005     0.005     0.000     0.000    33856   Array#last                     
+  5.03      0.004     0.004     0.000     0.000     3073   Array#sort                     
+  4.63      0.004     0.004     0.000     0.000     8464   Object#parse_session           /Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb:91
+  4.31      0.004     0.003     0.000     0.001     1536   Array#any?                     
+  3.38      0.003     0.003     0.000     0.000        1   JSON::Ext::Generator::GeneratorMethods::Hash#to_json 
+  2.24      0.002     0.002     0.000     0.000     8464   String#to_i                    
+  1.80      0.001     0.001     0.000     0.000        1   <Class::IO>#read               
+  1.70      0.001     0.001     0.000     0.000     1536   User#initialize                /Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb:14
+  1.57      0.001     0.001     0.000     0.000     1537   Array#join                     
+  1.47      0.001     0.001     0.000     0.000        2   Array#uniq                     
+  1.43      0.001     0.001     0.000     0.000     1536   Array#all?                     
+  1.32      0.003     0.001     0.000     0.002     1536   Object#parse_user              /Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb:81
+  0.82      0.002     0.001     0.000     0.001     1536   Class#new                      
+  0.67      0.001     0.001     0.000     0.000     3072   Integer#to_s                   
+  0.43      0.000     0.000     0.000     0.000     1536   Array#sum                      
+  0.38      0.000     0.000     0.000     0.000     1536   Array#reverse                  
+  0.36      0.000     0.000     0.000     0.000     1536   Array#max                      
+  0.10      0.077     0.000     0.000     0.077        1   <Module::GC>#disable           <internal:gc>:63
+  0.03      0.077     0.000     0.000     0.077        1   [global]#                      ruby-prof-flat.rb:9
+  0.01      0.077     0.000     0.000     0.077        1   Object#work                    /Users/vitaliytokmianin/work_projects/thinknetica_hw/rails-optimization-task1/task-1.rb:23
+  0.01      0.000     0.000     0.000     0.000        3   Array#count                    
   0.00      0.000     0.000     0.000     0.000        1   Kernel#dup                     
-  0.00      0.000     0.000     0.000     0.000        3   Array#count                    
   0.00      0.000     0.000     0.000     0.000        1   JSON::Ext::Generator::State#initialize_copy 
+  0.00      0.000     0.000     0.000     0.000        1   Kernel#initialize_dup          
 
 * recursively called methods
 

@@ -45,10 +45,13 @@ def work(disable_gc: true)
       @current_users.last.dates << session[:date]
       @current_users.last.session_times << session[:time].to_i
       @current_sessions << session
-      collect_stats_from_users(report, @current_users.last)
       # Подсчёт количества уникальных браузеров
       uniqueBrowsers << session[:browser].upcase
     end
+  end
+
+  @current_users.each do |user|
+    collect_stats_from_users(user, report)
   end
 
   # Отчёт в json
@@ -95,8 +98,10 @@ def parse_session(fields)
   }
 end
 
-def collect_stats_from_users(report, user)
-  user_stats ||= {
+def collect_stats_from_users(user, report)
+  user_key = "#{user.attributes[:first_name]}" + ' ' + "#{user.attributes[:last_name]}"
+
+  report[:usersStats][user_key] ||= {
     # Собираем количество сессий по пользователям
     sessionsCount:  user.sessions.size,
     # Собираем количество времени по пользователям
@@ -112,8 +117,4 @@ def collect_stats_from_users(report, user)
     # Даты сессий через запятую в обратном порядке в формате iso8601
     dates: user.dates.sort.reverse
   }
-
-  user_key = "#{user.attributes[:first_name]}" + ' ' + "#{user.attributes[:last_name]}"
-  report[:usersStats][user_key] ||= {}
-  report[:usersStats][user_key] = report[:usersStats][user_key].merge(user_stats)
 end
